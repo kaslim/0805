@@ -1,0 +1,5 @@
+ifconfig eth0 172.16.0.5/24
+route add default gw 172.16.0.254
+
+while true; do nc -lvp 389;done &
+while true; do nc -ulvp 389;done &

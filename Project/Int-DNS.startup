@@ -1,0 +1,4 @@
+ifconfig eth0 172.16.0.1/24
+route add default gw 172.16.0.254
+chmod +r /etc/dnsmasq_static_hosts.conf
+service dnsmasq start

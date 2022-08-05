@@ -1,0 +1,25 @@
+ifconfig eth0 201.224.131.22/16
+ifconfig eth1 8.8.8.1/24
+ifconfig eth2 22.39.224.17/16
+ifconfig eth3 135.207.0.2/16
+
+#ip addr add 201.224.131.22/16 dev eth0
+#ip addr add 8.8.8.1/24 dev eth1
+#ip addr add 135.207.0.2/16 dev eth2
+#ip addr add 135.207.157.254/16 dev eth3
+
+ip link set up dev eth0
+ip link set up dev eth1
+ip link set up dev eth2
+ip link set up dev eth3
+
+route add -net 192.168.0.0/16 gw 135.207.0.1
+route add -net 172.16.0.0/12 gw 135.207.0.1
+#route add -net 22.39.224.16/30 gw 135.207.0.2
+#route add -net 8.8.8.0/24 gw 8.8.8.1
+#route add -net 201.224.0.0/16 gw 201.224.131.22
+route add -net 135.207.0.0/16 gw 135.207.0.1
+
+route add default gw 135.207.0.1/16
+#ip route add default via 135.207.0.0/16
+

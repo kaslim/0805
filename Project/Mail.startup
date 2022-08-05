@@ -1,0 +1,10 @@
+ifconfig eth0 172.16.0.2/24
+route add default gw 172.16.0.254
+
+#systemctl start ncat-chat@25
+#systemctl start ncat-chat@26
+
+
+while true; do nc -lvp 25;done &
+while true; do nc -lvp 587;done &
+while true; do nc -lvp 993;done &

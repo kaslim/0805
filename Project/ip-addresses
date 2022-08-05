@@ -1,0 +1,35 @@
+Ext-DNS eth0 8.8.8.8/24
+Ext-Office eth0 22.39.224.18/30
+Ext-WWW eth0 201.224.19.7/16
+Int-DNS eth0 172.16.0.1/24
+Internet eth0 201.224.131.22/16
+Internet eth1 8.8.8.1/24
+Internet eth2 22.39.224.17/30
+Internet eth3 135.207.0.2/16
+
+
+firewall eth1 192.168.10.254/24
+firewall eth2 192.168.20.254/24
+firewall eth3 192.168.30.254/24
+firewall eth4 192.168.40.254/24
+firewall eth5 192.168.50.254/24
+firewall eth6 192.168.60.254/24
+firewall eth0 172.16.0.254/24
+firewall eth7 135.207.0.1/16
+
+
+
+
+
+
+Int-WWW eth0 172.16.0.6/24
+LDAP eth0 172.16.0.5/24
+Mail eth0 172.16.0.2/24
+OpenVPN eth0 172.16.0.4/24
+Squid eth0 172.16.0.3/24
+DEPTA-Staff1 eth0 192.168.10.1/24
+DEPTB-Staff1 eth0 192.168.20.1/24
+DEPTC-Staff1 eth0 192.168.30.1/24
+DEPTD-Staff1 eth0 192.168.40.1/24
+DEPTE-Staff1 eth0 192.168.50.1/24
+DEPT-ADMIN eth0 192.168.60.1/24
